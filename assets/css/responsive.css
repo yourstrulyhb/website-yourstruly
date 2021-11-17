@@ -1,0 +1,114 @@
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+   header {
+      position: relative;
+   }  
+   header ul {
+      width: 100%;
+      background-color: #00a388;
+      max-height: 0px;
+      overflow: hidden;
+      text-align: left;
+   }
+   .showing {
+      position: absolute;
+      top: 64px;
+      z-index: 10;
+      max-height: 100em;
+      overflow: visible;   
+   }
+   header ul li {
+      width: 100%;
+   }
+   header ul li a {
+      background-color: #107c6a;
+   }
+   header ul li ul {   
+      width: 100%;   
+   }
+   header ul li ul li a {
+      color: white;
+      padding: 10px;
+      padding-left: 50px;
+      background-color: #00a388; 
+   }
+   header ul li ul li a.logout {
+      color: black;
+   }
+   header .logo {
+      margin-left: 5px;
+   }
+   header .menu-toggle {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 30px;
+      cursor: pointer;
+   }
+   header.menu-toggle:hover > ul {
+      display: block;
+   }
+   .wrapper-search-bar {
+      width: 220px;
+   }
+   .wrapper-topics-dropdown {
+      width: 180px;
+   }
+   .content .main-content .blog-post {
+      height: 350px;
+   }
+   img {
+      width: 100%;   height: auto;
+      object-fit: cover;
+   }
+   .content .main-content .blog-post .blog-image-holder {
+      width: 100%;
+      height: 150px;
+   }
+   .content .main-content .blog-post .blog-title {
+      height: 12%;
+      width: 100%;
+   }
+   .content .main-content .blog-post h2 {
+      font-size: 20px;
+   }
+   .content .main-content .blog-post .blog-metadata {
+      height: 9%;     
+   }
+   .content .main-content .blog-post .blog-preview {
+   width: 95%;
+   height: 60px;
+   }
+   .content .main-content .blog-post #read-more-btn {
+      bottom: -20px;
+   }
+   footer {
+      height: 750px;
+   }
+   footer .footer-content .about {
+      top: 0;
+      width: 100%;   height: 90px;
+   }
+   footer .footer-content .about p {
+      margin-bottom: 0px;
+   }
+   footer .footer-content .links {
+      margin-top: 10px;
+      border-top: 2px solid white;
+      top: 150px;
+      position: relative;
+      width: 100%;
+   }
+   footer .footer-content .contact-form {
+      margin-top: 10px;
+      border-top: 2px solid white;
+      top: 70px;
+      position: relative;
+      width: 100%;
+   }
+   form #sender-message {
+      width: 450px;  height: 120px;
+      max-width: 450px; max-height: 150px;
+   }
+}

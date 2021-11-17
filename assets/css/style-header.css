@@ -1,0 +1,93 @@
+header {
+   height: 4.5em;
+   width: 100%;
+   position: sticky;
+   top: 0;
+   padding: 0 1.5em;
+   background: linear-gradient(45deg, var(--primary-red1) 1%, var(--primary-red3), var(--primary-bluegreen3) 60%,var(--primary-bluegreen1) 100%);
+   z-index: 999999;
+}
+header * {
+   color: var(--white-color);
+}
+header .logo {
+   float: left;
+   height: inherit;
+   /* border: 1px solid black; */
+   padding: 0.5em;
+}
+header .logo h1 {
+   font-size: 2em;
+   color: var(--white-color);
+   cursor: pointer; 
+   text-align: center;
+
+   /* border: 1px solid blueviolet; */
+}
+header ul {
+   float: right;
+   list-style: none;
+   height: inherit;
+}
+header ul li {
+   height: inherit;
+   float: left;
+   position: relative;
+}
+header ul li a {
+   font-size: 1.25em;
+   display: block;
+   padding: 1em 1.1em;
+}
+header ul li:hover {
+   background: rgba(117, 67, 67, 0.274);
+   /* backdrop-filter: blur(5px); */
+   border-bottom: 2px solid #FFF;
+   color: white;
+}
+/* user options*/
+header ul li ul {
+   width: inherit;
+   position: absolute;
+   top: 4.5em;
+   display: none;
+   border-top: 2px solid #FFF;
+   overflow: hidden;
+   list-style: none;
+   margin-right: 1em;
+   float: right;
+   height: min-content;
+}
+header ul li:hover ul {
+   display: block;
+}
+header ul li ul li {
+   border-bottom: 1px dotted rgb(0, 0, 0);
+   height: max-content;
+   width: 100%;
+   padding: 0;  
+}
+/*header ul li ul.showMenu {
+   height: max-content;
+}*/
+header ul li ul li a {
+   color: black;
+   width: inherit;
+   padding: 0.4em 0.75em;
+   background-color: var(--primary-red2);
+   backdrop-filter: blur(5px);
+}
+header ul li ul li a.logout {
+   color: rgb(209, 0, 0);
+}
+header ul li ul li a:hover {
+   background: rgba(202, 202, 202, 1);
+   backdrop-filter: blur(5px);
+   color:black;
+}
+header ul li ul li a.logout:hover {
+   color: red;
+}
+header .menu-toggle {
+   display: none;
+}
